@@ -1,0 +1,232 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #0b0f14;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 800;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #020617;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #22c55e;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 22px;
+    color: #22c55e;
+}
+
+.navbar nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #cbd5e1;
+    font-weight: 600;
+}
+
+.navbar nav a:hover {
+    color: #22c55e;
+}
+
+/* HERO */
+.hero {
+    height: 85vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)),
+        url("assets/img/gym-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #cbd5e1;
+}
+
+.cta-btn {
+    background: #22c55e;
+    padding: 16px 32px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+/* PROGRAMS */
+.programs {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.programs h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.program-card {
+    background: #020617;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    transition: .3s;
+}
+
+.program-card:hover {
+    transform: translateY(-6px);
+    border-color: #22c55e;
+}
+
+.program-card h3 {
+    color: #22c55e;
+    margin-bottom: 10px;
+}
+
+/* RESULTS */
+.results {
+    background: #020617;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.results-grid {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.result-box {
+    background: #0f172a;
+    padding: 30px;
+    border-radius: 12px;
+    width: 220px;
+}
+
+.result-box h3 {
+    font-size: 36px;
+    color: #22c55e;
+}
+
+/* ABOUT */
+.about {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* CONTACT */
+.contact {
+    background: #020617;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.contact form {
+    margin-top: 30px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0b0f14;
+    color: white;
+}
+
+.contact textarea {
+    min-height: 120px;
+}
+
+.contact button {
+    background: #22c55e;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #16a34a;
+}
+
+.contact-info {
+    margin-top: 25px;
+    color: #cbd5e1;
+}
+
+/* FOOTER */
+.footer {
+    background: #020617;
+    padding: 25px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* MOBILE */
+@media(max-width:768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+}
